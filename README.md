@@ -4,6 +4,6 @@ HTML [HostMakeJobCallback](https://html.spec.whatwg.org/multipage/webappapis.htm
 captures the active script and [HostCallJobCallback](https://html.spec.whatwg.org/multipage/webappapis.html#hostcalljobcallback)
 restores it when the job is invoked.
 
-However, neither Chrome 117, Firefox 119, or Safari 17 implements this yet.
+However, only Safari 17.5 implemented this. Neither Chrome 127, Firefox 129 implemented this yet.
 
 See [./index.html](./index.html) for an example.
