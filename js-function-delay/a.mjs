@@ -1,4 +1,4 @@
-const frame = frames[0];
+const frame = frames[3];
 
 const setLocationHref = Object
   .getOwnPropertyDescriptor(frame.location, "href")
@@ -6,6 +6,6 @@ const setLocationHref = Object
   .bind(frame.location);
 
 frame.onload = () => {
-  frame.Promise.resolve("./page-1")
-    .then(setLocationHref);
-};
+  frame.promise
+    .then(v => setLocationHref(v));
+}
